@@ -1,0 +1,43 @@
+MySQL commands are divided mainly as 4 sub languages
+ i. DDL(data definition lanaguage): These commands help us to structure our database like create,alter,
+rename,drop,truncate etc..,
+ ii. DML(Data manipulation language): These commands help us to manipulate or update or delete our data.
+eg: insert , update , delete etc..,
+  These commands also contains sub part called
+  DQL(data query language). its command is select which is used for
+  queries
+iii. DCL: data control language: These commands helps to control the
+ data which user manipulates
+  eg: grant, revoke etc..,
+iv. TCL (Transaction control language) : These commands helps to control the transactions and undo the previous query
+  eg: commit,rollback,savepoint etc..,
+
+
+i. Data Definition Language:
+      These commands are used to build the structure of database 
+  a. create: create is used to create database,tables,views etc..,
+      database - create database database-name;
+      table -  create table table-name(column1 datatype,
+      column2 datatype,column3 datatype .....)
+ b. Rename: rename is used to rename the table,view etc..,
+      rename table old-table-name to new-table-name
+ c. alter: alter is used to add /modify/ delete columns from database table
+      add column:
+      alter table tableName add column-name datatype;
+      add columns after a specific column:
+      alter table tableName add column-name datatype after specific-column;
+      rename/change column type:
+      alter table tableName change old-column new-column new-datatype
+      delete a column:
+      alter table tableName drop column columnName;
+
+
+
+
+
+
+
+
+
+
+

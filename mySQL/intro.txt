@@ -1,0 +1,140 @@
+=====================
+DATA BASES
+=====================
+MYSQL & MongoDB
+
+i. why do we need databases?
+    store data, retrieve data, update data, security, Analyze the data            
+
+ii. course structure:
+     i. data and databases introduction
+     ii. MySQL( intro, download & install, sub languages,
+          DDL,DML,DQL,TCL,DCL, operators, contraints,
+           clauses, queries, joins, sub queries, indexes,
+            views, stored procedure, functions)
+     iii. Project(data analysis - power bi, kaggle)
+     iv. Mongodb(intro, download & install , CRUD,
+          agreegate functions, agreegation frameworks,
+          queries, atlas)
+      v. interview questions and resume preparation
+ Duration: 3-4 weeks
+  class timings: 2:10-2:15  -- 3:30-3:40
+
+
+
+
+  3.  Introduction to databases:
+       Data is a set of raw facts(mostly numerical). This data can be refined. The refined data called information(mostly words)
+   eg: data says male,female populations in country and information makes statements on that data
+  Data is stored in the databases
+ SQL vs MySQL:
+       MySQL is database management system which is used to create , update, delete or access the database. SQL is a language which is used to communicate(CRUD) with database . In simple words, DBMS like mySQL uses SQL to do operations on database
+Before SQL, data used to be stores in File management system. it is easy to manage but will not have any relations between the data. Also data repetation(redundancy) is heavily possible
+  eg: ms access
+Later RDBMS(relational database management system) came into existence. In RDBMS, data is stored in tables. Tables contains rows and columns. Every table may have relation with other table. There are so many popular RDBMS like mySQL,oracle,postgresql,sql lite,sql server etc..,
+
+  i. download and install mySQL: 
+      step1: type in internet  " mysql download for windows"
+      step 2: select mySQL commity
+      step3: select full and execute and install
+      step 4: set up password.
+     step-5: download and install my SQL workbench
+      step-6: workbench to write DQL to make sure understand und is a graphical user tool
+
+
+2. mySQL follows RDBMS. here every data in linked with 
+tables. Tabled usrs row and column;
+
+commands:
+  i. open workbench, create a blank page
+ and test following .
+       a. create database databse-name
+       b. use database-name'
+
+
+Datatypes: datatypes are used to define the type of data it holds. MySQL provides numerous datatypes. out of which, popular/frequently used are:
+int  -- used for integer columns
+eg: any integer
+varchar -- used for string columns with dynamic number of characters.
+Eg: varchar(4)  ---   raju, rani,sam,ram,je,x
+char -- used for string columns with fixed  number of characters
+Eg: char(4) -- raju, ramu,sita,jaya
+decimal(maximum totalnoOfDigits, maximum digits after decimal )
+ -- used for decimal values
+eg: decimal(10,2)   -- 12.14,   2.1,   12345678.12
+date -- used for complete dates.dates must be in the format 
+'YYYY-MM-DD'
+eg: '2012-12-12'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
