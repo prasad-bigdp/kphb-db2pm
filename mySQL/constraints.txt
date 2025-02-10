@@ -1,0 +1,46 @@
+constraints:
+     In mySql, tables consists of columns which need to follow certain conditions. The conditions or rules set to the columns are called constraints.
+  i. unique : Any column which contains unique constraint must have unique values for every record. unique also accepts null value
+  ii. not null : Any column which contains not null constraint must contain values which are not null
+  iii. auto increment : Any column which contains auto
+increment will increment the value of column automatically
+  iv.  default: any column which contains default  constraint
+can provides a value default to all rows
+  v. check : Any column which contains check constraint is used to check all values in that column are satisfying a condition or not
+ vi. primary key: primary key is a column by which we can identify each and every row individually
+      primary key must be unique and not null
+ vii. foreign key: foreign key is a primary key in another table and got as a reference to this table.
+
+
+  create database school;
+  use the database;
+  create the table with following columns
+   --> tid -- auto increement , primary key
+   --> tname -- not null
+   --> phno -- unique
+   --> country -- default "india"
+   --> salary -- minimum 20k
+ insert appropriate 2-3 rows of data
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+

@@ -30,6 +30,25 @@ i. Data Definition Language:
       alter table tableName change old-column new-column new-datatype
       delete a column:
       alter table tableName drop column columnName;
+ d. drop: drop is used to delete a table or column or database etc..,
+      drop database database-name / drop table tableName
+ e. truncate: truncate is used to delete only data, 
+      truncate table tableName
+
+2. DML commands(Data manipulation language):
+    These commands are used to manipulate the database such as inserting data into tables,
+updating data in tables, deleting data from tables etc..,
+
+ i. insert  : insert command is used to insert the data in tables.
+     insert into tablename values(col1Value,col2Value,col3Value....)
+
+
+
+
+
+
+
+
 
 
 

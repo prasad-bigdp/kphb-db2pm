@@ -39,7 +39,9 @@ Later RDBMS(relational database management system) came into existence. In RDBMS
       step3: select full and execute and install
       step 4: set up password.
      step-5: download and install my SQL workbench
-      step-6: workbench to write DQL to make sure understand und is a graphical user tool
+      step-6: workbench to write DQL to make sure understand und is a graphical user tool.
+
+      
 
 
 2. mySQL follows RDBMS. here every data in linked with 
