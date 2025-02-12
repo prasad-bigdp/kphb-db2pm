@@ -1,0 +1,55 @@
+Directives: Directives are used to manipulate the DOM dynamically.
+  we have several Decorators which helps the Directives. These decorators contains meta data and are useful for component communication.
+  when one component is inside the another component, inner one is called child component
+outer one is called parent component
+--> To send data from parent component to child component we can use "@Input" 
+ 
+There are 3 ways to include directives
+i. structural directives
+ii. property directives
+iii. custom directive
+
+i. structural Directives
+     structural directives are used to manipulate the structure of web page
+  we can implement structural directives using ngIf, ngSwitch, ngFor.
+
+   ngIf: ngIf is a structural directive which is used to render the view of the component dynamically
+ syntax: <div *ngIf="condition">
+                        // statements;
+                </div>
+   statements will be presented into view only if condition is true  else we can use template reference variables 
+   In angular, "ng-template" lets make to create a block of view without immediately rendering.
+we can refer them by giving a custom name followed by # called template reference variables
+eg:   <ng-template #myCode>
+             //code
+       </ng-template>
+
+  ngIfElse: it is used to switch between two views based on a condition 
+          <div *ngIf="condition then referenceVariable else referenceVariable2">
+          </div>
+          <ng-template #referncevariable>
+          </ng-template>
+         <ng-template #referncevariable2>
+          </ng-template>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

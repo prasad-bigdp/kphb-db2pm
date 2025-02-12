@@ -1,0 +1,38 @@
+Operators:
+   There are different operators in mySql which are used
+to specify an operation or condition
+  aritematic operators: +,-,*,/,%
+  logical operators: and (&&) , or (||) , not (!)
+  null operators: is null, is not null
+  like operator : it is used to identify a specific pattern
+      '%'  -- means any number of character and any character
+      '_'  -- means any character only one time
+  for eg: '_a_'   ===>raj,sai(three chracters only)
+  assignment operators: assignment operators are used to assign
+certain values such as += , -=, *=,/*,%=  
+  special operators: mySql contains so many special operators
+  such as between,in,any,exists,some etc..,
+  between: it is used to specify the range
+   eg: select * from employees
+where salary between 20000 and 50000
+  In: In is used to specify list of values.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

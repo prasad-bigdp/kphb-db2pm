@@ -41,6 +41,70 @@ updating data in tables, deleting data from tables etc..,
 
  i. insert  : insert command is used to insert the data in tables.
      insert into tablename values(col1Value,col2Value,col3Value....)
+  we can even insert specific columns like
+ insert into tablename(col1,col2,col3)
+values (col1 value, col2 value, col3 value);
+
+ii. update: 
+To update a particular data/field in mySql, we can use 'update' command. it is often used with 
+'set' command to assign a value and ' where' clause to specify the column
+ for first time, you might encounter following error:
+Error Code: 1175. You are using safe update mode and you tried to update a table without a WHERE that uses a KEY column. 
+ To disable safe mode, toggle the option in Preferences -> SQL Editor and reconnect.    0.000 sec
+solution: edit --> preferences--> sql editor --> save update uncheck --> ok
+solution 2 : set sql_safe_updates = false
+
+
+Delete :  delete is used to delete a specific data/field of a
+ record in a table
+  delete from tablename
+  where condition
+
+DML commands also suggest a special command which is used to read the data called "DQL(data query language)
+ eg: select
+
+select *
+from tablename
+
+The above command will list all data of records in a
+specific table
+
+we can get specific columns using select
+select col1,col2...
+from tablename
+
+we can get specific records of data by using where clause
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

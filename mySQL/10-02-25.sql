@@ -16,9 +16,17 @@ country varchar(20) default "India",
 salary decimal(10,2));*/
 -- insert into employees values
 -- (101,"raj",18,"india",20000)
-insert into employees 
-(ename,age,salary) values 
-("prasad",27,84000);
+-- insert into employees 
+-- (ename,age,salary) values 
+-- ("prasad",27,84000);
+insert into employees
+(ename,age,salary) values
+("shekhar",18,12000),
+("rani",51,24000),
+("jaya",35,65000);
+
+
+
 
 
 

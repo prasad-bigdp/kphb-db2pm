@@ -1,0 +1,49 @@
+clauses: clauses are used to structure or filter the query result
+   i. order by : order by is used to keep results in an order(either ascending or descending order). by default it results 'ascending'
+-- print all employees from "india"
+-- alphabetically of their names
+select * from employees
+where country = 'india'
+order by ename;
+
+LIMIT: limit is used to limit the number of records to display after query
+syntax: limit number;
+
+-- print name,age of highest salary
+-- employee
+select ename,age,salary 
+from employees
+order by salary desc
+limit 1;
+
+
+offset : offset is used skip the records of data from the query results
+syntax: offset number;
+ -- print second highest salary
+ -- employee details
+ select * from employees
+ order by salary desc
+ limit 1
+offset 1;
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
