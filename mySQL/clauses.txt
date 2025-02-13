@@ -30,6 +30,79 @@ offset 1;
 
    
 
+Group by: group by is used to group the records based on common field/column values. it is used for collective responses by using agrregate functions.
+   // print list of genders available in students table
+  select gender
+  from students
+  group by gender
+Agreegate functions: agreegate functions are used mainly for collective data analysis
+ i. count() : count is used to count total number of records available in that group
+   // WAQ to print how many items sold per category
+          select category,count(category)
+          from ecommerce
+          group by category
+ 2. sum() : sum is used to add all the values available for a particular group
+   //WAQ to print total marks achieved by students
+     based on their gender
+ select gender, sum(smarks)
+  from students
+  group by gender
+3. avg() : avg is used to print average of a column 
+  from a particular group
+ //WAQ to print average marks of students based
+on their gender
+select gender, avg(smarks)
+  from students
+  group by gender
+4. max() : max is used to print maximum of a column froma particular group
+WAQ to print maximum marks of students based 
+on their score
+select gender,max(smarks)
+  from students
+  group by gender
+
+5. min(): min is used to print minimum value of a column from a particular group
+/* WAQ to print minimum marks of students based on their gender */
+ select gender,min(smarks)
+  from students
+  group by gender
+
+6. Distinct:  distinct is used to get different records of data without duplication
+WAQ to print total number of genders we have in students table
+ select count(distinct gender)
+  from students
+
+7. string concat: string concat can be used to print
+different values existed in each group
+WAQ to print names of employees from different countries along with total country count
+we use function names group_concat()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
