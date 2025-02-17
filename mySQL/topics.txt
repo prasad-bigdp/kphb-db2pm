@@ -1,0 +1,18 @@
+MYSQL INTRODUCTION
+DOWNLOAD & INSTALL
+data types
+sub languages
+  --DDL(create,alter,rename,truncate,drop)
+  --DML(INSERT,DELETE,UPDATE)
+  -- queries(select)
+-- constraints
+-- operators
+-- clauses(where,order by, limit,offset, group by , having, )
+-- aggregate functions(sum,avg,min,max,count,group_concat)
+-- JOINS(inner join,left,right join)
+-- sub queries
+-- indexes, views, stored procedures, functions
+-- TCL, DCL, normalization
+
+
+

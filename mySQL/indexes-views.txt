@@ -1,0 +1,59 @@
+indexes are used to speed up data retrival operations on database tables. it works like books index allowing database to find rows quickly without scanning entire table or going row after row
+ by default index will be created for primary key
+
+ create index index-name on tablename(columnname)
+
+ delete the index:
+ drop index index-name
+
+ indexes speed up where,order by,group by etc.., commands
+ but over indexing slows down insert,delete,update.
+
+ views:
+   views are used as a virtual table based on the result of
+   a SQL Query. it does not store data physically but provides a way to simplify complex queries 
+   syntax: 
+   create view viewname as query;
+   it acts like abstract layer over tables.
+   it provides security to the tables. views cannot have indexes
+
+stored procedure: A stored procedure  is a precoompiled collection of SQL statements stored in the database. it can accept inputs as parameters and perform operations
+
+it is used to improve performance and cache results in database
+it's main use is code reusability
+
+syntax: 
+delimiter //
+create procedure procedure_name(parameters)
+begin
+  query
+end
+//
+
+call procedure_name(arguments)
+
+eg:delimiter //
+create procedure 
+countryWise(c varchar(20))
+begin
+SELECT * FROM office.employees
+where country=c;
+end
+// 
+
+call countryWise("uk")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
