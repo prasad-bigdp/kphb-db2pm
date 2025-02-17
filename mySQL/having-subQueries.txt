@@ -1,0 +1,38 @@
+'having' clause:
+          having is used in combination with the group by clause. it will work after the groupby has worked and 
+where is worked before group by
+-- divide students based on gender
+-- avg their marks
+-- print only their 
+-- average is greater than 85
+select gender,avg(smarks)
+from students
+group by gender
+having avg(smarks)>85
+
+difference between where and having:
+   i. where will be applied before group by
+      having will be applied after group by
+  ii. where cannot handle aggregate functions
+      having can handle aggregate functions
+  iii. where and having both can use and /or and 
+used for condition only
+
+sub- Queries: A subquery is a query nested inside
+another query. The inner query(sub query) returns
+result that is used by outer query
+  syntax: select columns
+                from table1
+                where column= (select columns
+                 from table
+                 where condition)
+
+
+
+
+
+
+
+
+       
+
