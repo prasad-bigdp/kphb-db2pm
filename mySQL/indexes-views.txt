@@ -40,8 +40,85 @@ SELECT * FROM office.employees
 where country=c;
 end
 // 
-
 call countryWise("uk")
+//create a stored procedure that accepts a value (salary amount) and
+ it should print all employess having more salary than mentioned
+
+  iv. functions:  functions in mysql also called stored functions. They are similar to stored procedures but they return a value.
+delimiter //
+  create function function_name() returns data_type
+begin
+    logic
+  return value;
+end
+//
+
+
+
+WAF that goes to each record/row and increase salary 
+and return their sum
+
+declare sumValues Decimal(10,2)
+delimiter //
+create function salaryUpdate() returns decimal(10,2)
+   begin
+     select sum(salary) into sumValues
+     from employees
+     return salary
+end //
+
+sumValues()
+
+
+ vi. DCL commands: These commands are used to control that data such that it gives control over how data should be passed.
+
+   The commands are grant and revoke
+  grant is used to provide privilages to be granted. eg: select,insert,delete  etc..,
+  revoke is used take the privilages to be granted. eg:
+rolebased databases
+
+vii. TCL : These commands are used to manage/control the transactions. every statement can itself a transaction.
+set autocommit=false
+i. rollback  : rollback is used to bring database of previous state
+ii. commit: commit is used to save the database of current state and remove previous states permanently.
+iii. savepoint: creates a savepoint within the transaction so that rollback will go to that particular point
+
+Normalization:
+        it is the process of organizing data in tables/databases to minimize data redundancy and improve data integrity
+  1NF: Each cell in a table must contain atomic value
+  2NF: Each nonkey attribute must depend on Primary key
+  3NF: if a table is in 2NF and in case non key attribute depend on other values than primary key, split into smaller tables
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
