@@ -1,0 +1,53 @@
+Basic Questions
+What is MySQL?
+What are the advantages of using MySQL?
+Explain the difference between MySQL and SQL.
+What is a database?
+What is a table in MySQL?
+What are the different types of tables in MySQL?
+Explain the difference between CHAR and VARCHAR.
+What is a primary key?
+What is a foreign key?
+What is an index in MySQL?
+Explain the different types of indexes in MySQL.
+What is a unique key?
+What is the default port for MySQL?
+Explain the concept of a MySQL client and server.
+What is a stored procedure?
+Intermediate Questions
+How do you create a database in MySQL?
+How do you create a table in MySQL?
+How do you insert data into a MySQL table?
+How do you update data in a MySQL table?
+How do you delete data from a MySQL table?
+What is the difference between DELETE and TRUNCATE commands?
+Explain the difference between INNER JOIN and OUTER JOIN.
+What is a LEFT JOIN?
+What is a RIGHT JOIN?
+What is a FULL JOIN?
+How do you create a stored procedure in MySQL?
+How do you create a trigger in MySQL?
+What is a view in MySQL?
+How do you create a view in MySQL?
+How do you optimize a MySQL query?
+Advanced Questions
+What is normalization? Explain the different normal forms.
+What is denormalization?
+Explain the ACID properties in the context of a database.
+What are transactions in MySQL?
+How do you implement transactions in MySQL?
+What are the different storage engines in MySQL?
+Explain the difference between InnoDB and MyISAM.
+What are the advantages of using InnoDB over MyISAM?
+What is replication in MySQL?
+How do you set up replication in MySQL?
+What is the difference between master-slave and master-master replication?
+What is a subquery in MySQL?
+How do you handle errors in MySQL stored procedures?
+What are MySQL triggers, and how do you use them?
+Explain the concept of MySQL partitions.
+How do you backup and restore a MySQL database?
+What is a common table expression (CTE)?
+What are the security features available in MySQL?
+How do you implement full-text search in MySQL?
+Explain how to optimize MySQL database performance.
