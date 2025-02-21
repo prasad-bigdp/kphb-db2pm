@@ -12,7 +12,7 @@ sub languages
 -- JOINS(inner join,left,right join)
 -- sub queries
 -- indexes, views, stored procedures, functions
--- TCL, DCL, normalization
+-- TCL(commit,rollback,savepoint), DCL(grant,revoke), normalization
 
 
 

@@ -1,0 +1,99 @@
+MongoDB:
+    mongodb is a nosql , document based schema less database that allows you to store and manaage large amount of semi structured data. it is flexible,scalable and easy to use.
+  There are so many noSQL databases like
+cassandra, couchDB,apache db etc..,
+
+what are the differences between mongoDB and mySQL?
+   Mongodb is document based structure and mySQL is table based structure. MongoDB is schemaless and MySQL contains the Schema. Mongodb is a noSQL but mySQL uses SQL for DB.
+ 
+History: it was first release in 2009 by 10gen. mongodb name comes from word 'humongous' means ability to hold larget data
+
+   It is a document-oriented database that stores JSON like documents called BSON(binary json). heavily used for handling higher amount of data
+    steps: 
+      1. goto google and type
+             "mongodb community server" download and install
+     2. goto google and download 
+"mongodb compass" download and Install
+    3. if you want, similarly download and install nongodb shell
+
+In mongoDB, whole database is also called schema. documents replaces records of tables. feilds in the documents are similar to column. collections are simmilar to tables
+
+
+     create databases: we can create database in mongodb in two ways. mongoDB databases cannot be created empty, so we need to create a collection inside the mongoDB to connect database
+   i. open mongoDB compass, make a connection
+      (default -- localhost:27017)
+       you can see list of databases, we can create one using + symbol on top.
+  ii. Beside '+', we can see mongoDB shell and write
+      'use database-name": it will uses database , if there is no database with specific name, it creates and use it.
+     syntax: use database-name
+
+create a collection:
+collection is a group of mongodb documents. it is equivalent to mysql tables. A collection exists within a single database. collection do not enforce schema
+   db.createCollection('collection-name')
+
+to drop the collection, we can use 
+  db.collection-name.drop()
+
+Insert a Document:
+   Document: A document is a set of key value pairs. document have dynamic schema. Dynamic Schema means documents inside the same collection do not need to have same fields and structure. single document can hold multiple datatypes
+  we can create /insert a document into collection in two ways
+
+i. insertOne:  using this command , we can insert one document into collection
+      syntax: 
+db.collection-name.insertOne({key1:value1,key2:value2.......})
+
+ii. insertMany: using this command, we can insert multiple documents into collection
+  syntax:
+db.collectionName.insertMany([{key1:value1,key2:value2.......},
+{key1:value1,key2:value2.......},{key1:value1,key2:value2.......}])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
