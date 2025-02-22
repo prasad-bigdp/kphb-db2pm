@@ -1,0 +1,48 @@
+mongoDB is a open source NoSQL,document based schema less,BSON database which is used to storage , manage,scale large more efficiently
+eg: 
+{
+name:"raj",
+age:50
+}
+
+update: mongoDB provides a way to update in two ways
+   i.updateOne: it is used to update the document based on a condition. this method can update only one value
+db.collection-name.updateOne(conditionObject, updation object)
+eg:db.students.updateOne({name:"prasad},{$set:{marks:0}})
+but in case multiple elements need to updated. we can use
+updateMany.
+   ii.updateMany: it is used to update multiple documentsat a time.
+    db.collection-name.updateMany(conditionObject, updation object)
+eg:db.students.updateMany({name:"prasad},{$set:{marks:0}})
+
+Delete: delete command is used to delete a specific conditioned document/documents. we have two ways to do that
+     i. deleteOne: it is used to delete only one document which matched specific criteria 
+      db.collection-name.deleteOne(conditionObject)
+     ii.deleteMany:it is used to delete all the documents which matched specific criteria
+      db.collection-name.deleteMany(conditionObject)
+
+iv. find: find is used to read/display the documents that matched specific criteria, we can do it in two ways
+     i.findOne: it is used to read only one document that matched given criteria
+        db.collection-name.findOne(filteredObject)
+     ii.find:it is used to read all the documents that matched given criteria
+       db.collection-name.find(filteredObject)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
