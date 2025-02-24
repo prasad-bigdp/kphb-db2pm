@@ -1,0 +1,22 @@
+link: https://fakestoreapi.com/products
+
+goto compass create a db--> collection --> insert data ---> copy paste the link array data --> insert
+Answer following questions
+
+i. print all the documents whose category is 'electronics;
+
+ii. print all the jewellery products only with their title and price
+
+iii. Add a field "offerPrice" to documents and update its price as 10% discount from original price
+
+iv. remove description field from men's clothing
+ category items
+
+v. print all documents whose price is between 100 to 500
+in descending order
+
+vi. find the total number of women's clothing products ar e available
+
+
+
+

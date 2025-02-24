@@ -1,0 +1,58 @@
+  Operators are used to filter the data using some conditions. In mongoDB , operators are preceeded by $
+    i. Comparison Operators: These Operators are used to compare values in queries
+       a. $eq: matches values that a equal to a specific value
+       db.students.find({name:{$eq:"priya"}})
+       b. $gt: matches values that are greater than a specific value.
+       db.students.find({age:{$gt:20}})
+       c. $lt: matched values that are less than a specific value
+       similarly we can also perform gte,lte,ne
+       d. $in: matches values that exists in an array of specified values
+       db.students.find({name:{$in:["priya","raj"]}})
+       e. $nin: matches values that are not exists in an array of specified values
+       db.students.find({name:{$nin:["priya","raj"]}})
+
+    ii. logical operators: These operators are used to combine multiple conditions
+       a.$and: matches documents that satisfy all the conditions
+       b.$or: matches documents that satisfies any one of the condition
+       c.$not: Inverts the effects of query expression
+       d.$nor : matches the documents that are failed in all conditions
+       db.collection.find({$and:[{age:{$lt:20}},{age:{$gt:30}}]})
+    iii. Element operator: used to check whether a field is exist or not
+        db.collection-name.find({fieldname:{$exists:true}})
+    iv.Assignment operators:
+       These operators are used to update the fields based on a condition
+      a.$set: set is used to update a field with a specified value
+      db.students.updateMany({name:"vani},{$set:{age:50}})
+      b. $unset: it is used to remove a certain field from a documents
+      db.students.updateOne({name:"vani"},{$unset:{status:true}})
+      c.$inc:increment a numerical value
+      db.students.updateOne({name:"vani},{$inc:{age:200}})
+      d.$mul: multiplies a numerical values
+    db.students.updateOne({name:"vani},{$mul:{age:2}})
+      e.$rename: renames a field
+      db.students.updateOne({name:"vani"},{$unset:{status:true}})
+
+we can use some default functions such as
+   i. sort(): it is used to sort the results of a query in ascending or descending order
+   1 is ascending and -1 is descending 
+   db.students.find().sort({age:1})
+   ii. find with projection: we can set second argument for find to select only which fields to display in query result
+   db.students.find({},{age:1,_id:0})
+   iii. count : it is used to count the total documents result in the query
+   query.count()
+   iv. limit(): it is used to limit the result to certain documents
+   query.limit(2)
+   v. skip(): it is used to skip the certain documents
+   query.skip(2)
+
+
+
+
+
+
+
+   
+
+
+
+
