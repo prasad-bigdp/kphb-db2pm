@@ -1,0 +1,37 @@
+Aggregation Framework: it is used to perform or process the data and transform the data in a flexible way. it's like a pipeline that takes in data , performs various operations and outputs the transformed data
+
+  An Aggregation Pipeline consists of multiple stages, each of which performs a specific operation on the data. The stages are executed in a sequence such that output of one stage will pass to the input of next stage
+  syntax: db.collection.aggregate([{//stage1},{//stage2},...])
+
+  Most Popular Stages:
+    i.$match: filters the data according to a condition
+    ii. $project : it is use to select only certain fiels to appear in the result._id is default to appear. 1 is true which makes field appear and 0 is false which makes the field disappear
+    iii. $sort: sorts the data in ascending or descending order of a certain field. 1 is for ascending, -1 is for descending
+    Eg: db.products.aggregate([{$match:{category:'jewelery'}},{$project:{title:1,_id:0}},{$sort:{title:1}}])
+
+    iv. $group: groups the data by a specific field and perform aggregation operations on each group
+
+    use aggregate pipe $group and print number of items
+    on each category
+db.products.aggregate([{$group:{_id:"$category",count:{$count:{}}}},{$sort:{count:1}}])
+
+  we can use aggregate functions such as $count,$sum,Smin,$max,$avg in $group stage
+
+  v. $unwind: unwind is used to split the array of documents into individual documents
+    for eg: we have list of customers and each customer have list of orders they did as a array. To split each order from array so that we can group again and find the sum , we will use $unwind
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
