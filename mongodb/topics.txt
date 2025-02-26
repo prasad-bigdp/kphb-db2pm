@@ -6,3 +6,8 @@ MongoDB:
   Insert,update,delete,find the data
   operators
   agreegation framework
+     -- $match,$project,$sort,$limit,$skip,$group($count,$sum,$avg,$min,$max),$unwind,$lookup,$addFields,$output
+  replication
+  sharding
+  backup & security
+  Atlas

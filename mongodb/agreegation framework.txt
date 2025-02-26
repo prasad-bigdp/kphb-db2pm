@@ -20,6 +20,55 @@ db.products.aggregate([{$group:{_id:"$category",count:{$count:{}}}},{$sort:{coun
   v. $unwind: unwind is used to split the array of documents into individual documents
     for eg: we have list of customers and each customer have list of orders they did as a array. To split each order from array so that we can group again and find the sum , we will use $unwind
     
+      print the total product whose price is between 200 and 500 and group them according to their category and sort them as per ascending order of noOfProducts
+
+   db.products.aggregate([
+{$match:{$and:[{price:{$gt:200}},{price:{$lt:500}}]}},
+{$group:{_id:"$category",totalProducts:{$count:{}}}},
+{$sort:{totalProducts:1}}])
+
+$lookup : look up is used to perform the left outer join with another collection
+
+db.collectionName.aggregate([
+         $lookup: {
+               from:'foreign collection',
+               localField:'field name in my current collection'
+               foreignField:' field name in foreign collection',
+               as: 'new field name '
+          }
+])
+
+$out: out is used to store the output of previous stage as a new collection
+   $out:{
+      db:'databasename',
+      coll:'collectionname;
+  }   or you can directly mention collection name as
+  {
+   $out:'collectionname'
+  }
+     eg: print all products as group wise with their total sum of price,average price,total count and store the result as a new collection
+   db.products.aggregate([{$group:{
+_id:"$category",
+totalCount:{$count:{}}},
+totalSum:{$sum:"$price"},
+totalAvg:{$avg:"$price"}
+},{$out:"newcollectionname"}])
+
+addFields: $addFields is used to add new fields to the documents
+$addFields:{
+    'fieldname':query
+}
+
+db.products.aggregate([{$addFields:{
+  newPrice:{$multiply:["$price",0.9]}
+}}])
+
+
+
+
+
+
+
 
 
 
